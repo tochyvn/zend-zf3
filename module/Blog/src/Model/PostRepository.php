@@ -98,10 +98,29 @@ class PostRepository implements PostRepositoryInterface
     {
         $int = (int) $int;
         $sql = "SELECT * FROM Album WHERE id = ?";
-        $query = $this->adapter->query($sql, array($int));
+
+        /** PreparedStatement optimal for multi-querying **/
+        //$query = $this->adapter->query($sql, array($int));
+
+        /** PreparedStatement optimal for multi-querying **/
+        $statement = $this->adapter->createStatement($sql, array($int));
+        //var_dump($statement);
+        $query = $statement->execute();
 
         $query = $query->current();
 
         return $query;
     }
+
+
+    public function saveAlbum($data) 
+    {
+        $sql = "INSERT INTO album VALUES (null, ?, ?)";
+        $param = array(
+            $data['artist'],
+            $data['title']
+        );
+        $query = $this->adapter->query($sql, $param);
+    }
+
 }

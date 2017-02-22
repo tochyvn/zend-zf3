@@ -27,8 +27,15 @@ class ListController extends AbstractActionController
 
     public function testAction() 
     {
+        //Insertion d'un nouvel Album
+        $param = [
+            'artist' => 'PHP Security',
+            'title' => '<script>alert(\'Faille XSS\')</script>'
+        ];
+        //$this->postRepository->saveAlbum($param);
+
         return [
-            'results' => $this->postRepository->findAlbumById(2)
+            'results' => $this->postRepository->toch()
         ];
     }
 

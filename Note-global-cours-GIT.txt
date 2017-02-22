@@ -30,3 +30,51 @@ Cette commande a réalisé deux actions. Elle a remis le pointeur HEAD sur la br
 =====> git merge <nom_branche> Permet de merger la branche <nom_branche> à la branche courante
 
 git branch -d <nom_branche> permet d'effacer la branche <nom_branche>
+
+
+
+======================================================== PLUS ==============================================================================
+============================================================================================================================================
+============================================================================================================================================
+
+Gestion des branches
+Maintenant que vous avez créé, fusionné et supprimé des branches, regardons de plus près les outils de gestion des branches qui s’avèreront utiles lors d’une utilisation intensive des branches.
+
+La commande git branch permet en fait bien plus que la simple création et suppression de branches. Si vous la lancez sans argument, vous obtenez la liste des branches courantes :
+
+$ git branch
+  prob53
+* master
+  test
+Notez le caractère * qui préfixe la branche master : il indique la branche courante (c’est-à-dire la branche sur laquelle le pointeur HEAD se situe). Ceci signifie que si, dans cette situation, vous validez des modifications (grâce à git commit), le pointeur de la branche master sera mis à jour pour inclure vos modifications. Pour visualiser la liste des derniers commits sur chaque branche, vous pouvez utiliser le commande git branch -v :
+
+$ git branch -v
+  prob53   93b412c fix javascript issue
+* master  7a98805 Merge branch 'prob53'
+  test 782fd34 add scott to the author list in the readmes
+--merged et --no-merged sont des options très utiles qui permettent de filtrer les branches de cette liste selon que vous les avez ou ne les avez pas encore fusionnées avec la branche courante. Pour voir quelles branches ont déjà été fusionnées dans votre branche courante, lancez git branch --merged :
+
+$ git branch --merged
+  prob53
+* master
+Comme vous avez déjà fusionné prob53 un peu plus tôt, vous la voyez dans votre liste. Les branches de cette liste qui ne comportent pas le préfixe * peuvent généralement être effacées sans risque au moyen de git branch -d puisque vous avez déjà intégré leurs modifications dans une autre branche et ne risquez donc pas de perdre quoi que ce soit.
+
+Pour visualiser les branches qui contiennent des travaux qui n’ont pas encore été fusionnés, vous pouvez utiliser la commande git branch --no-merged  :
+
+$ git branch --no-merged
+  test
+Ceci affiche votre autre branche. Comme elle contient des modifications qui n’ont pas encore été intégrées, essayer de les supprimer par la commande git branch -d se solde par un échec :
+
+$ git branch -d test
+error: The branch 'test' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D test'.
+Si vous souhaitez réellement supprimer cette branche et perdre ainsi le travail réalisé, vous pouvez tout de même forcer la suppression avec l’option -D, comme l’indique le message.
+
+======================================================== PLUS ==============================================================================
+============================================================================================================================================
+============================================================================================================================================
+
+
+/********************************************************************************************************************************************/
+***************************************** VOICI LE LIEN *************************************************************************************
+***************************************** https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Gestion-des-branches **************************

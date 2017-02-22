@@ -1,5 +1,8 @@
 <?php
 
+
 foreach ($this->results as $result) {
-	var_dump($result);
+	echo '<h3>' . $this->escapeHtml($result->title) . '</h3>' ;
 }
+
+var_dump($this->url(['action' => 'toch']));
