@@ -15,4 +15,18 @@
 
 ======> git branch -u origin/<nom_de_la_branche> permet de lier la branche courante à la branche nommée <nom_de_la_branche> sur le serveur
 
-NB : Lorsqu'on change de branche le code courant sur notre pc change aussi en fonction des modif sur elles
+			----------------- git checkout <nom_de_la_branche> ------------------
+
+NB : Lorsqu'on change de branche le code courant sur notre pc change aussi en fonction des modif sur elles  =====> voir explanation ci-dessous
+
+Figure 16. HEAD est déplacé lors d’un checkout
+Cette commande a réalisé deux actions. Elle a remis le pointeur HEAD sur la branche master et elle a replacé les fichiers de votre répertoire de travail dans l’état du snapshot pointé par master. Cela signifie aussi que les modifications que vous réalisez à partir de ce point divergeront de l’ancienne version du projet. Cette commande annule les modifications réalisées dans la branche test pour vous permettre de repartir dans une autre direction.
+
+		----------------------------------------------------------------------------
+
+
+=====> git log --oneline --decorate --graph --all  Elle va afficher l’historique de vos commits, affichant les endroits où sont positionnés vos pointeurs de branche ainsi que la manière dont votre historique a divergé
+
+=====> git merge <nom_branche> Permet de merger la branche <nom_branche> à la branche courante
+
+git branch -d <nom_branche> permet d'effacer la branche <nom_branche>
