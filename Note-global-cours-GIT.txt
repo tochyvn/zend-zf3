@@ -1,0 +1,26 @@
+
+================================================ Notes et mes remarques sur le GIT ====================================================================
+
+
+
+======> git clone <url_https> permet de cloner un repository Git à partir d'une url distante
+
+======> git init Permet d'initialiser un repertoire Git en local
+
+======> git branch Permet de visualiser la liste des branches Git local
+
+======> git branch <nom_de_la_new_branche> Permet de créer une nouvelle branche nommée <nom_de_la_new_branche> en local
+
+======> git checkout <nom_de_la_branche> Permet de switcher vers la branche existante nommée <nom_de_la_branche>
+
+======> git branch -u origin/<nom_de_la_branche> permet de lier la branche courante à la branche nommée <nom_de_la_branche> sur le serveur
+
+
+			----------------- git checkout <nom_de_la_branche> ------------------
+
+NB : Lorsqu'on change de branche le code courant sur notre pc change aussi en fonction des modif sur elles  =====> voir explanation ci-dessous
+
+Figure 16. HEAD est déplacé lors d’un checkout
+Cette commande a réalisé deux actions. Elle a remis le pointeur HEAD sur la branche master et elle a replacé les fichiers de votre répertoire de travail dans l’état du snapshot pointé par master. Cela signifie aussi que les modifications que vous réalisez à partir de ce point divergeront de l’ancienne version du projet. Cette commande annule les modifications réalisées dans la branche test pour vous permettre de repartir dans une autre direction.
+
+		----------------------------------------------------------------------------
