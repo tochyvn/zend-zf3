@@ -1,0 +1,18 @@
+
+================================================ Notes et mes remarques sur le GIT ====================================================================
+
+
+
+======> git clone <url_https> permet de cloner un repository Git à partir d'une url distante
+
+======> git init Permet d'initialiser un repertoire Git en local
+
+======> git branch Permet de visualiser la liste des branches Git local
+
+======> git branch <nom_de_la_new_branche> Permet de créer une nouvelle branche nommée <nom_de_la_new_branche> en local
+
+======> git checkout <nom_de_la_branche> Permet de switcher vers la branche existante nommée <nom_de_la_branche>
+
+======> git branch -u origin/<nom_de_la_branche> permet de lier la branche courante à la branche nommée <nom_de_la_branche> sur le serveur
+
+NB : Lorsqu'on change de branche le code courant sur notre pc change aussi en fonction des modif sur elles
