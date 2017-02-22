@@ -25,5 +25,12 @@ class ListController extends AbstractActionController
     	));
     }
 
+    public function testAction() 
+    {
+        return [
+            'results' => $this->postRepository->findAlbumById(2)
+        ];
+    }
+
     
 }

@@ -1,15 +1,14 @@
 <?php
 namespace Blog;
 
-use Zend\Router\Http\Literal; 
+use Zend\Router\Http\Segment; 
 use Zend\ServiceManager\Factory\InvokableFactory;
 use Zend\Db\TableGateway\TableGatewayInterface;
 use Zend\Db\TableGateway\TableGateway;
 
-// use Album\Model\AlbumTable;
-// use Zend\Db\Adapter\AdapterInterface;
-// use Zend\Db\ResultSet\ResultSet;
-// use Zend\Db\TableGateway\TableGateway;
+use Zend\Db\Adapter\AdapterInterface;
+use Zend\Db\ResultSet\ResultSet;
+use Album\Model\Album;
 
 return [
 
@@ -20,8 +19,20 @@ return [
             //TableGatewayInterface::class => TableGateway::class,
         ],
         'factories' => [
-            //Model\PostRepository::class => InvokableFactory::class,
-           //Model\PostRepository::class => Factory\PostRepositoryFactory::class,
+
+            Model\PostRepository::class => function($container) {
+                $tableGateway = $container->get(Model\AlbumTableGateway::class);
+                //$adapter = $tableGateway->getAdapter();
+                return new Model\PostRepository($tableGateway);
+            },
+
+            Model\AlbumTableGateway::class => function ($container) {
+                $dbAdapter = $container->get(AdapterInterface::class);
+                $resultSetPrototype = new ResultSet();
+                $resultSetPrototype->setArrayObjectPrototype(new Album());
+                return new TableGateway('album', $dbAdapter, null, $resultSetPrototype);
+            },
+
         ],
     ],
 
@@ -43,11 +54,14 @@ return [
             // Define a new route called "blog"
             'blog' => [
                 // Define a "literal" route type:
-                'type' => Literal::class,
+                'type' => Segment::class,
                 // Configure the route itself
                 'options' => [
                     // Listen to "/blog" as uri:
-                    'route' => '/blog',
+                    'route' => '/blog[/:action]',
+                    'constraints' => [
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                    ],
                     // Define default controller and action to be called when
                     // this route is matched
                     'defaults' => [

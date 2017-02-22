@@ -10,7 +10,7 @@ use Zend\ServiceManager\Factory\FactoryInterface;
 class ListControllerFactory implements FactoryInterface
 {
     /**
-     * @param ContainerInterface $container
+     * @param ContainerInterface $container permet de recuperer des service <=> au Service manager
      * @param string $requestedName
      * @param null|array $options
      * @return ListController
@@ -18,6 +18,8 @@ class ListControllerFactory implements FactoryInterface
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
     	//We want to register the service PostRepositoryInterface before use it below (register it in module.config.php)
-        return new ListController($container->get(PostRepositoryInterface::class));
+        $postRepository = $container->get(PostRepositoryInterface::class);
+        //var_dump($postRepository->findAllPosts());
+        return new ListController($postRepository);
     }
 }

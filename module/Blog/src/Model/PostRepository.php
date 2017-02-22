@@ -3,19 +3,21 @@ namespace Blog\Model;
 
 use DomainException;
 use Zend\Db\Adapter\AdapterInterface;
-// use Zend\Db\Adapter\Adapter;
+use Zend\Db\Adapter\Adapter;
 // use Zend\Db\Sql\Sql;
 use Zend\Db\TableGateway\TableGatewayInterface;
 
 class PostRepository implements PostRepositoryInterface
 {
 
+    private $tableGateway;
     private $adapter;
 
-    public function __construct(TableGatewayInterface $adapter) 
+    public function __construct(TableGatewayInterface $tableGateway) 
     {
-        $this->adapter = $adapter;
-        var_dump($adapter);
+        $this->tableGateway = $tableGateway;
+        $this->adapter = $tableGateway->getAdapter();
+        //var_dump($tableGateway->getAdapter());
     }
 
 	private $data = [
@@ -80,6 +82,26 @@ class PostRepository implements PostRepositoryInterface
     }
 
     public function toch() {
-        return $this->adapter->select();
+        return $this->tableGateway->select();
+    }
+
+    public function findAllAlbums($int) 
+    {
+        $int = (int) $int;
+        $sql = "SELECT * FROM Album";
+        $query = $this->adapter->query($sql, Adapter::QUERY_MODE_EXECUTE);
+
+        return $query;
+    }
+
+    public function findAlbumById($int) 
+    {
+        $int = (int) $int;
+        $sql = "SELECT * FROM Album WHERE id = ?";
+        $query = $this->adapter->query($sql, array($int));
+
+        $query = $query->current();
+
+        return $query;
     }
 }

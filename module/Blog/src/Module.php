@@ -42,6 +42,8 @@ class Module implements ConfigProviderInterface
                 Controller\ListController::class => function($container) {
                     return new Controller\ListController();
                 },
+                //Creation d'une instance de ListController avec dependances (Constructeur avec paramètres) dependance creer dans la config
+                Controller\ListController::class => Factory\ListControllerFactory::class,
             ],
         ];
     }*/
@@ -51,7 +53,7 @@ class Module implements ConfigProviderInterface
     /********************** CETTE SECTION EQUIVAUT A LA KEY "service-manager" DU FICHIER "module.config.php   **********************************/
     /********************** CETTE SECTION EQUIVAUT A LA KEY "service-manager" DU FICHIER "module.config.php   **********************************/
    
-    public function getServiceConfig()
+    /*public function getServiceConfig()
     {
         return [
             'factories' => [
@@ -71,7 +73,7 @@ class Module implements ConfigProviderInterface
 
             ],
         ];
-    }
+    }*/
     
     
 }

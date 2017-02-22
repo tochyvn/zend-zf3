@@ -21,15 +21,7 @@ class PostRepositoryFactory implements FactoryInterface
      */
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-    	
-
-    	/*$dbAdapter = $container->get(AdapterInterface::class);
-    	$resultSetPrototype = new ResultSet();
-        $resultSetPrototype->setArrayObjectPrototype(new Album());
-        $tableGateway = new TableGateway('album', $dbAdapter, null, $resultSetPrototype);
-    	var_dump($tableGateway);*/
-
-    	//We want to register the service PostRepositoryInterface before use it below (register it in module.config.php)
+        //Cree une instance de post avec sa dependance TableGatewayInterface
         return new PostRepository($container->get(TableGatewayInterface::class));
     }
 }
