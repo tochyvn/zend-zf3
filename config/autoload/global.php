@@ -18,4 +18,11 @@ return [
         'username' => 'root',
         'password' => ''
     ],
+
+    'sphinx' => [
+    	'driver'    => 'pdo_mysql',
+	    'hostname'  => '127.0.0.1',
+	    'port'      => 9306,
+	    'charset'   => 'UTF8'
+    ],
 ];
