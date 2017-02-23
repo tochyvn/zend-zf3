@@ -29,6 +29,7 @@ return array(
     'Zend\\Config\\' => array($vendorDir . '/zendframework/zend-config/src'),
     'Zend\\ComponentInstaller\\' => array($vendorDir . '/zendframework/zend-component-installer/src'),
     'Zend\\Code\\' => array($vendorDir . '/zendframework/zend-code/src'),
+    'Zend\\Authentication\\' => array($vendorDir . '/zendframework/zend-authentication/src'),
     'ZendDeveloperTools\\' => array($vendorDir . '/zendframework/zend-developer-tools/src'),
     'ZF\\DevelopmentMode\\' => array($vendorDir . '/zfcampus/zf-development-mode/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
