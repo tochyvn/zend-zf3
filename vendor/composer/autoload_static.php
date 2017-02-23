@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
 {
     public static $files = array (
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '34901568a1e26d13dd475cb2c85e0284' => __DIR__ . '/..' . '/zendframework/zend-form/autoload/formElementManagerPolyfill.php',
     );
 
@@ -22,6 +23,7 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
             'Zend\\Router\\' => 12,
             'Zend\\Mvc\\' => 9,
             'Zend\\ModuleManager\\' => 19,
+            'Zend\\Math\\' => 10,
             'Zend\\Loader\\' => 12,
             'Zend\\InputFilter\\' => 17,
             'Zend\\I18n\\' => 10,
@@ -97,6 +99,10 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
         'Zend\\ModuleManager\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-modulemanager/src',
+        ),
+        'Zend\\Math\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-math/src',
         ),
         'Zend\\Loader\\' => 
         array (

@@ -20,9 +20,11 @@ class AuthController extends AbstractActionController
 			'users',
 			'username',
 			'password',
-			'MD5(?)'
+			"MD5(CONCAT('staticSalt', ?, password_salt))"
+			//'MD5(?)'
 		);
-
+		/** Test d'insertion **/
+		//$this->configAuthAdapter();
 		//var_dump($this->authAdapter);
 		
 	}
@@ -50,10 +52,12 @@ class AuthController extends AbstractActionController
 		];
 
 		$columnToOmit = ['password'];
-
+		$salt = random_bytes(32);
+		
 		return [
 			'auth' => $result,
-			'user' => $this->authAdapter->getResultRowObject() //ou $this->authAdapter->getResultRowObject(null, $columnToOmit)
+			'user' => $this->authAdapter->getResultRowObject(), //ou $this->authAdapter->getResultRowObject(null, $columnToOmit)
+			'random' => $salt//\Zend\Math\Rand::getBytes(32, true)
 		];
 	}
 
@@ -72,20 +76,21 @@ class AuthController extends AbstractActionController
 	*/
 	private function configAuthAdapter() {
 
-		$sqlCreate = 'CREATE TABLE `users` ('
+		/*$sqlCreate = 'CREATE TABLE `users` ('
 		    . ' `id` INTEGER AUTO_INCREMENT PRIMARY KEY, '
 		    . ' `username` VARCHAR(50) UNIQUE NOT NULL, '
 		    . ' `password` VARCHAR(32) NULL, '
 		    . ' `real_name` VARCHAR(150) NULL,'
-		    . ' `active` BOOLEAN DEFAULT FALSE)';
+		    . ' `active` BOOLEAN DEFAULT FALSE)';*/
 
-		$this->adapter->query($sqlCreate);
+		
+		$salt = \Zend\Math\Rand::getBytes(32, true);
+		$sqlInsert = "INSERT INTO `users` (`username`, `password`, `real_name`, `status`, `active`, `password_salt`) "
+		    . "VALUES ('my_username', MD5('my_password'), 'My Real Name', 'N/A', '1','" . utf8_encode($salt) . "')";
 
-		$sqlInsert = "INSERT INTO `users` (`username`, `password`, `real_name`) "
-		    . "VALUES ('my_username', 'my_password', 'My Real Name')";
-
-		// Insert the data
-		$this->adapter->query($sqlInsert);
+		//Insert the data
+		var_dump($this->adapter->query($sqlInsert, \Zend\Db\Adapter\Adapter::QUERY_MODE_EXECUTE));
+		
 	}
 
 
