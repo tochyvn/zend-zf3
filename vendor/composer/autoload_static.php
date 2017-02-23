@@ -36,6 +36,7 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
             'Zend\\Config\\' => 12,
             'Zend\\ComponentInstaller\\' => 24,
             'Zend\\Code\\' => 10,
+            'Zend\\Authentication\\' => 20,
             'ZendDeveloperTools\\' => 19,
             'ZF\\DevelopmentMode\\' => 19,
         ),
@@ -151,6 +152,10 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
         'Zend\\Code\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-code/src',
+        ),
+        'Zend\\Authentication\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-authentication/src',
         ),
         'ZendDeveloperTools\\' => 
         array (
