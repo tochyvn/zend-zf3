@@ -35,6 +35,7 @@ return array(
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Interop\\Container\\' => array($vendorDir . '/container-interop/container-interop/src/Interop/Container'),
     'Blog\\' => array($baseDir . '/module/Blog/src'),
+    'Authentification\\' => array($baseDir . '/module/Authentification/src'),
     'Application\\' => array($baseDir . '/module/Application/src'),
     'ApplicationTest\\' => array($baseDir . '/module/Application/test'),
     'Album\\' => array($baseDir . '/module/Album/src'),
