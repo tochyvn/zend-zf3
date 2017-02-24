@@ -1,0 +1,296 @@
+    1  git --version
+    2  git clone ssh://root@137.74.42.14/jeanmichel_dev.git
+    3   git clone ssh://root@137.74.42.14/jeanmichel_dev.git
+    4   git clone ssh://root@137.74.42.14/jeanmichel_dev.git
+    5  git fetch && git checkout master
+    6   git clone ssh://root@137.74.42.14/jeanmichel_dev.git
+    7   git clone ssh://root@137.74.42.14/jeanmichel_dev.git
+    8  ls
+    9  ls
+   10  git clone ssh://root@137.74.42.14/jeanmichel_dev.git
+   11  git clone ssh://tochyvn@git@github.com:tochyvn/laravel_courses.git
+   12  git clone ssh://tochyvn@https://github.com/tochyvn/laravel_courses.git
+   13  git clone ssh://git@github.com:tochyvn/laravel_courses.git
+   14  git clone https://github.com/tochyvn/aeafm-project.git
+   15  git status
+   16  cd aeafm-project/
+   17  git status
+   18  git statsu
+   19  git status
+   20  git status
+   21  git add *
+   22  git  status
+   23  cd ..
+   24  git add *
+   25  git status
+   26  git add .gitignore 
+   27  git status
+   28  git commit -m "ajout composer Jordan Chiono"
+   29  git pull origin master 
+   30  vim module/Application/view/layout/layout.phtml 
+   31  git add *
+   32  git status
+   33  git commit -m "merge"
+   34  git status
+   35  git pull origin master 
+   36  git push origin master 
+   37  git status
+   38  git add *
+   39  git status
+   40  git add .gitignore 
+   41  git pull origin master 
+   42  git push origin master 
+   43  git commit -m "gitignore"
+   44  git pull origin master 
+   45  git push origin master 
+   46  git revert 771b354388482122854136e486e8a25e4ae2d0b4
+   47  git revert 
+   48  git revert f7fb48859034dbf4574f8840b0801b71f6718ebd
+   49  git status
+   50  git push
+   51  ssh -v
+   52  ssh -V
+   53  git remote -v
+   54  git remote add origin https://github.com/tochyvn/test-git.git
+   55  git init
+   56  git remote add origin https://github.com/tochyvn/test-git.git
+   57  git remote -v
+   58  git status
+   59  git status
+   60  git status
+   61  git add *
+   62  git commit -m "Test de mise en ligne d'un repo existant en local"
+   63  git branch
+   64  git diff
+   65  git push origin master 
+   66  git pull
+   67  git branch
+   68  git push origin master 
+   69  git push --help
+   70  git pull origin
+   71  git pull https://github.com/tochyvn/test-git.git
+   72  git push 
+   73  git push origin master
+   74  git remote -v
+   75  git push origin
+   76  git push origin/master
+   77  git push origin master
+   78  git push origin master
+   79  git pull --rebase
+   80  git pull --rebase origin 
+   81  git pull --rebase origin master
+   82  git push origin master
+   83  git pull
+   84  git clone https://github.com/tochyvn/test-git.git
+   85  git status
+   86  cd ..
+   87  git clone https://github.com/tochyvn/test-git.git
+   88  cd test-git/
+   89  git status 
+   90  cd test-git/
+   91  git clone https://github.com/tochyvn/test-git.git
+   92  git https://github.com/tochyvn/test-git.git
+   93  git clone https://github.com/tochyvn/test-git.git
+   94  git status
+   95  git diff
+   96  git status
+   97  git status
+   98  git add *
+   99  git status
+  100  git commit "Mise en ligne de mon projet"
+  101  git commit -m "Mise en ligne de mon projet"
+  102  git push
+  103  git branch develop
+  104  git branch
+  105  git checkout develop 
+  106  git status 
+  107  git checkout master 
+  108  git status 
+  109  git commit
+  110  gi add .gitignore 
+  111  git add .gitignore 
+  112  git commit 
+  113  git commit -m "eee"
+  114  git status
+  115  git push
+  116  git branch
+  117  git lol
+  118  git fetch
+  119  git status 
+  120  git branch 
+  121  git rmote -v
+  122  git remote -v
+  123  git checkout develop 
+  124  git status 
+  125  git remote -v
+  126  git clone https://github.com/tochyvn/zend-zf3.git
+  127  git branch
+  128  cd zend-zf3/
+  129  git branch 
+  130  git lo
+  131  git log
+  132  git branch
+  133  git status
+  134  git add Win7/
+  135  git status
+  136  git commit -m 'windows 7 + crack'
+  137  git push origin develop 
+  138  git status
+  139  git revert
+  140  git status
+  141  git add *
+  142  git git add Win7/windows7/
+  143  git add Win7/windows7/
+  144  git add Win7/windows\ 7crack/
+  145  git add Win7/
+  146  git status
+  147  git status
+  148  git add *
+  149  git status
+  150  git status
+  151  git status 
+  152  git commit -m 'Windows-7-fallou'
+  153  git commit -m 'Windows-7-fallou'
+  154  git clone https://github.com/tochyvn/zend-zf3.git
+  155  git status 
+  156  git add Win7/
+  157  git status 
+  158  git commit -m 'add-windows-7-fallou'
+  159  git push origin master 
+  160  git status
+  161  git push
+  162  git status
+  163  git commit -m 'ignore repertoire wind7/'
+  164  git add *
+  165  git -f add *
+  166  git add -f *
+  167  git status 
+  168  git add .gitignore 
+  169  git status 
+  170  git status
+  171  git revert -h
+  172  composer
+  173  git status
+  174  git commit -m 'remove directory win7/'
+  175  git pull origin master
+  176  git mergetool
+  177  git push origin master 
+  178  https://github.com/tochyvn/zend-zf3.git
+  179  git clone https://github.com/tochyvn/zend-zf3.git
+  180  git clone https://github.com/tochyvn/zend-zf3.git
+  181  cd zend-zf3
+  182  git clone https://github.com/tochyvn/zend-zf3.git
+  183  git branch
+  184  cd zend-zf3/
+  185  cd zend-zf3/
+  186  git branch
+  187  git config merge.tool tortoisemerge
+  188  composer install
+  189  git pull
+  190  git branch -v
+  191  git branch develop
+  192  git branch -v
+  193  git branch --no-merged
+  194  git branch --merged
+  195  git log --online --decorate --graph --all
+  196  git log --oneline --decorate --graph --all
+  197  git checkout develop 7
+  198  git checkout develop
+  199  git status
+  200  git diff module/Blog/view/blog/list/index.phtml
+  201  git diff
+  202  git checkout master 
+  203  git status
+  204  git diff vendor/composer/autoload_psr4.php
+  205  git diff vendor/composer/autoload_static.php
+  206  git diff vendor/composer/autoload_namespaces.php
+  207  git diff vendor/composer/autoload_classmap.php
+  208  git diff vendor/composer/autoload_real.php
+  209  git diff vendor/composer/ClassLoader.php
+  210  composer install
+  211  composer update
+  212  git status
+  213  git checkout -f develop 
+  214  git status
+  215  git checkout -f master 
+  216  git status
+  217  git add module/Blog/view/blog/list/index.phtml module/Blog/view/blog/list/test.phtml 
+  218  git commit -m 'Correction d-un petit bug * oublié dans le code'
+  219  git status
+  220  git push origin master 
+  221  git status
+  222  git checkout develop 
+  223  git branch -u origin/develop 
+  224  git pull
+  225  git log --oneline --decorate --graph --all
+  226  git branch -v
+  227  git branch --no-merged
+  228  git branch --merged
+  229  git log --oneline --decorate --graph --all
+  230  git checkout ma
+  231  git checkout master 
+  232  git log --oneline --decorate --graph --all
+  233  git branch --merged
+  234  git branch --no-merged
+  235  git checkout develop 
+  236  git status
+  237  *git add *
+  238  git add *
+  239  git status
+  240  git commit -m 'Correction bug * apparaissant dans le code'
+  241  git push
+  242  git checkout master 
+  243  git merge develop 
+  244  git log --oneline --decorate --graph --all
+  245  git branch
+  246  git branch authentification
+  247  git branch -v
+  248  git checkout authentification
+  249  git fetch
+  250  git status 
+  251  git pull
+  252  git branch -u origin/authentification 
+  253  git pull
+  254  composer install
+  255  composer update
+  256  git status
+  257  git diff
+  258  composer update
+  259  composer install
+  260  git status
+  261  git add *
+  262  git commit -m 'mise a jour des dependances composer'
+  263  git pull
+  264  git push
+  265  git log --oneline --decorate --graph --all
+  266  git pull
+  267  git status
+  268  git add *
+  269  git status 
+  270  git commit -m 'debut multi-connexion'
+  271  git push
+  272  git checkout master 
+  273  git status
+  274  git pull
+  275  git pull
+  276  git diff
+  277  git merge authentification 
+  278  git merge authentification 
+  279  git log --oneline --decorate --graph --all
+  280  git branch abstraction-db
+  281  git branch
+  282  git branch -v
+  283  git fetch
+  284  git status
+  285  git diff
+  286  git push
+  287  git checkout abstraction-db 
+  288  git branch -u origin/abstraction-db
+  289  git push -u
+  290  git branch -u origin/abstraction-db
+  291  git fetch
+  292  git branch -u origin/abstraction-db
+  293  git pull
+  294  git push
+  295  history
+  296  history > historique-cmd-git.txt
