@@ -8,6 +8,7 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
 {
     public static $files = array (
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '34901568a1e26d13dd475cb2c85e0284' => __DIR__ . '/..' . '/zendframework/zend-form/autoload/formElementManagerPolyfill.php',
     );
 
@@ -21,6 +22,7 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
             'Zend\\Session\\' => 13,
             'Zend\\ServiceManager\\' => 20,
             'Zend\\Router\\' => 12,
+            'Zend\\Paginator\\' => 15,
             'Zend\\Mvc\\' => 9,
             'Zend\\ModuleManager\\' => 19,
             'Zend\\Math\\' => 10,
@@ -38,17 +40,36 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
             'Zend\\Config\\' => 12,
             'Zend\\ComponentInstaller\\' => 24,
             'Zend\\Code\\' => 10,
+            'Zend\\Cache\\' => 11,
             'Zend\\Authentication\\' => 20,
             'ZendDeveloperTools\\' => 19,
             'ZF\\DevelopmentMode\\' => 19,
         ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Debug\\' => 24,
+            'Symfony\\Component\\Console\\' => 26,
+        ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
+        ),
+        'O' => 
+        array (
+            'OrmDoctrine\\' => 12,
         ),
         'I' => 
         array (
             'Interop\\Container\\' => 18,
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
+            'Doctrine\\Common\\' => 16,
         ),
         'B' => 
         array (
@@ -91,6 +112,10 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
         'Zend\\Router\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-router/src',
+        ),
+        'Zend\\Paginator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-paginator/src',
         ),
         'Zend\\Mvc\\' => 
         array (
@@ -160,6 +185,10 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-code/src',
         ),
+        'Zend\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-cache/src',
+        ),
         'Zend\\Authentication\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-authentication/src',
@@ -172,13 +201,49 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
         array (
             0 => __DIR__ . '/..' . '/zfcampus/zf-development-mode/src',
         ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'OrmDoctrine\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/module/OrmDoctrine/src',
+        ),
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
+        ),
+        'Doctrine\\Instantiator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
         ),
         'Blog\\' => 
         array (
@@ -202,11 +267,46 @@ class ComposerStaticInit31b7761e1a9523daffa03f7f0537d312
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'D' => 
+        array (
+            'Doctrine\\ORM\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/orm/lib',
+            ),
+            'Doctrine\\DBAL\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/dbal/lib',
+            ),
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+            'Doctrine\\Common\\Inflector\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
+            ),
+            'Doctrine\\Common\\Collections\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/collections/lib',
+            ),
+            'DoctrineORMModule\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/doctrine-orm-module/src',
+            ),
+            'DoctrineModule\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/doctrine-module/src',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit31b7761e1a9523daffa03f7f0537d312::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit31b7761e1a9523daffa03f7f0537d312::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit31b7761e1a9523daffa03f7f0537d312::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
