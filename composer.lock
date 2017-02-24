@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "af9919395197ae0df135c7045ae73123",
     "content-hash": "53cefbc298edfca7d2afa9e5916860fa",
     "packages": [
         {
@@ -36,7 +35,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
-            "time": "2017-02-14 19:40:03"
+            "time": "2017-02-14T19:40:03+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -84,7 +83,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-11-07 23:38:38"
+            "time": "2016-11-07T23:38:38+00:00"
         },
         {
             "name": "psr/container",
@@ -133,7 +132,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-02-14 16:28:37"
+            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "zendframework/zend-authentication",
@@ -195,7 +194,7 @@
                 "Authentication",
                 "zf2"
             ],
-            "time": "2016-02-28 15:02:34"
+            "time": "2016-02-28T15:02:34+00:00"
         },
         {
             "name": "zendframework/zend-code",
@@ -248,7 +247,7 @@
                 "code",
                 "zf2"
             ],
-            "time": "2016-10-24 13:23:32"
+            "time": "2016-10-24T13:23:32+00:00"
         },
         {
             "name": "zendframework/zend-component-installer",
@@ -292,7 +291,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Composer plugin for automating component registration in zend-mvc and Expressive applications",
-            "time": "2016-09-12 21:15:53"
+            "time": "2016-09-12T21:15:53+00:00"
         },
         {
             "name": "zendframework/zend-config",
@@ -348,7 +347,7 @@
                 "config",
                 "zf2"
             ],
-            "time": "2016-02-04 23:01:10"
+            "time": "2016-02-04T23:01:10+00:00"
         },
         {
             "name": "zendframework/zend-db",
@@ -405,7 +404,7 @@
                 "db",
                 "zf2"
             ],
-            "time": "2016-08-09 19:28:55"
+            "time": "2016-08-09T19:28:55+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -449,7 +448,7 @@
                 "escaper",
                 "zf2"
             ],
-            "time": "2016-06-30 19:48:38"
+            "time": "2016-06-30T19:48:38+00:00"
         },
         {
             "name": "zendframework/zend-eventmanager",
@@ -503,7 +502,7 @@
                 "events",
                 "zf2"
             ],
-            "time": "2016-12-19 21:47:12"
+            "time": "2016-12-19T21:47:12+00:00"
         },
         {
             "name": "zendframework/zend-filter",
@@ -563,7 +562,7 @@
                 "filter",
                 "zf2"
             ],
-            "time": "2016-04-18 18:32:43"
+            "time": "2016-04-18T18:32:43+00:00"
         },
         {
             "name": "zendframework/zend-form",
@@ -640,7 +639,7 @@
                 "form",
                 "zf2"
             ],
-            "time": "2017-02-23 16:03:25"
+            "time": "2017-02-23T16:03:25+00:00"
         },
         {
             "name": "zendframework/zend-http",
@@ -690,7 +689,7 @@
                 "http",
                 "zf2"
             ],
-            "time": "2017-01-31 14:41:02"
+            "time": "2017-01-31T14:41:02+00:00"
         },
         {
             "name": "zendframework/zend-hydrator",
@@ -752,7 +751,7 @@
                 "hydrator",
                 "zf2"
             ],
-            "time": "2016-04-18 17:59:29"
+            "time": "2016-04-18T17:59:29+00:00"
         },
         {
             "name": "zendframework/zend-i18n",
@@ -819,7 +818,7 @@
                 "i18n",
                 "zf2"
             ],
-            "time": "2016-06-07 21:08:30"
+            "time": "2016-06-07T21:08:30+00:00"
         },
         {
             "name": "zendframework/zend-inputfilter",
@@ -874,7 +873,7 @@
                 "inputfilter",
                 "zf2"
             ],
-            "time": "2016-08-18 18:40:34"
+            "time": "2016-08-18T18:40:34+00:00"
         },
         {
             "name": "zendframework/zend-loader",
@@ -918,7 +917,7 @@
                 "loader",
                 "zf2"
             ],
-            "time": "2015-06-03 14:05:47"
+            "time": "2015-06-03T14:05:47+00:00"
         },
         {
             "name": "zendframework/zend-math",
@@ -968,7 +967,7 @@
                 "math",
                 "zf2"
             ],
-            "time": "2016-04-28 17:37:42"
+            "time": "2016-04-28T17:37:42+00:00"
         },
         {
             "name": "zendframework/zend-modulemanager",
@@ -1027,7 +1026,7 @@
                 "modulemanager",
                 "zf2"
             ],
-            "time": "2016-05-16 21:21:11"
+            "time": "2016-05-16T21:21:11+00:00"
         },
         {
             "name": "zendframework/zend-mvc",
@@ -1092,7 +1091,7 @@
                 "mvc",
                 "zf2"
             ],
-            "time": "2016-12-20 15:33:49"
+            "time": "2016-12-20T15:33:49+00:00"
         },
         {
             "name": "zendframework/zend-mvc-form",
@@ -1134,7 +1133,7 @@
                 "mvc",
                 "zf2"
             ],
-            "time": "2016-06-07 18:34:07"
+            "time": "2016-06-07T18:34:07+00:00"
         },
         {
             "name": "zendframework/zend-router",
@@ -1195,7 +1194,7 @@
                 "routing",
                 "zf2"
             ],
-            "time": "2016-05-31 20:47:48"
+            "time": "2016-05-31T20:47:48+00:00"
         },
         {
             "name": "zendframework/zend-servicemanager",
@@ -1256,7 +1255,7 @@
                 "servicemanager",
                 "zf"
             ],
-            "time": "2017-02-15 15:29:48"
+            "time": "2017-02-15T15:29:48+00:00"
         },
         {
             "name": "zendframework/zend-session",
@@ -1322,7 +1321,7 @@
                 "session",
                 "zf2"
             ],
-            "time": "2016-07-05 18:32:50"
+            "time": "2016-07-05T18:32:50+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
@@ -1367,7 +1366,7 @@
                 "stdlib",
                 "zf2"
             ],
-            "time": "2016-09-13 14:38:50"
+            "time": "2016-09-13T14:38:50+00:00"
         },
         {
             "name": "zendframework/zend-uri",
@@ -1414,7 +1413,7 @@
                 "uri",
                 "zf2"
             ],
-            "time": "2016-02-17 22:38:51"
+            "time": "2016-02-17T22:38:51+00:00"
         },
         {
             "name": "zendframework/zend-validator",
@@ -1485,7 +1484,7 @@
                 "validator",
                 "zf2"
             ],
-            "time": "2017-01-29 17:24:24"
+            "time": "2017-01-29T17:24:24+00:00"
         },
         {
             "name": "zendframework/zend-view",
@@ -1572,7 +1571,7 @@
                 "view",
                 "zf2"
             ],
-            "time": "2016-06-30 22:28:07"
+            "time": "2016-06-30T22:28:07+00:00"
         },
         {
             "name": "zfcampus/zf-development-mode",
@@ -1621,7 +1620,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2017-01-09 23:34:49"
+            "time": "2017-01-09T23:34:49+00:00"
         }
     ],
     "packages-dev": [
@@ -1672,7 +1671,7 @@
                 "debug",
                 "zf2"
             ],
-            "time": "2015-06-03 14:05:35"
+            "time": "2015-06-03T14:05:35+00:00"
         },
         {
             "name": "zendframework/zend-developer-tools",
@@ -1749,7 +1748,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2016-09-08 13:53:58"
+            "time": "2016-09-08T13:53:58+00:00"
         }
     ],
     "aliases": [],

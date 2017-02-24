@@ -22,9 +22,10 @@ return [
             Model\PostRepositoryInterface::class => Model\Abstraction\ZendDbSqlRepository::class,
             //TableGatewayInterface::class => TableGateway::class,
         ],
+        
         'factories' => [
 
-            /*Model\PostRepository::class => function($container) {
+            Model\PostRepository::class => function($container) {
                 $tableGateway = $container->get(Model\AlbumTableGateway::class);
                 //$adapter = $tableGateway->getAdapter();
                 return new Model\PostRepository($tableGateway);
@@ -35,7 +36,7 @@ return [
                 $resultSetPrototype = new ResultSet();
                 $resultSetPrototype->setArrayObjectPrototype(new Album());
                 return new TableGateway('album', $dbAdapter, null, $resultSetPrototype);
-            },*/
+            },
 
             Model\Abstraction\ZendDbSqlRepository::class => Factory\ZendDbSqlRepositoryFactory::class,
 

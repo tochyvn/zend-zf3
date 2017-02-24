@@ -21,7 +21,7 @@ class ListController extends AbstractActionController
     	return new ViewModel(array(
     		'posts' => $this->postRepository->findAllPosts(),
 
-    		'sqls' => $this->postRepository->toch(),
+    		//'sqls' => $this->postRepository->toch(),
     	));
     }
 

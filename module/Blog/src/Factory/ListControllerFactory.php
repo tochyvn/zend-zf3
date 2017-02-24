@@ -18,8 +18,6 @@ class ListControllerFactory implements FactoryInterface
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
     	//We want to register the service PostRepositoryInterface before use it below (register it in module.config.php)
-        $postRepository = $container->get(PostRepositoryInterface::class);
-        //var_dump($postRepository->findAllPosts());
-        return new ListController($postRepository);
+        return new ListController($container->get(PostRepositoryInterface::class));
     }
 }
