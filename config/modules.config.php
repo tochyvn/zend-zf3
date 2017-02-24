@@ -11,8 +11,6 @@
  * This should be an array of module namespaces used in the application.
  */
 return [
-    'Zend\Cache',
-    'Zend\Paginator',
     'Zend\Session',
     'Zend\Form',
     'Zend\Db',
@@ -23,7 +21,4 @@ return [
     'Album',
     'Blog',
     'Authentification',
-    'DoctrineModule',
-    'DoctrineORMModule',
-    'OrmDoctrine',
 ];

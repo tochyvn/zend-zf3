@@ -11,8 +11,6 @@
  * file.
  */
 
-use Doctrine\DBAL\Driver\PDOMySql\Driver as PDOMySqlDriver;
-
 return [
     'db' => [
         'driver' => 'Pdo',
@@ -27,22 +25,4 @@ return [
 	    'port'      => 9306,
 	    'charset'   => 'UTF8'
     ],
-
-    return [
-        'doctrine' => [
-            'connection' => [
-                'orm_default' => [
-                    'driverClass' => PDOMySqlDriver::class,
-                    'params' => [
-                        'host'     => '127.0.0.1',                    
-                        'user'     => 'root',
-                        'password' => '',
-                        'dbname'   => 'blog',
-                    ]
-                ],            
-            ],        
-        ],
-    ];
-
-
 ];
