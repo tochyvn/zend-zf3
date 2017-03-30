@@ -15,6 +15,9 @@
 
 ======> git branch -u origin/<nom_de_la_branche> permet de lier la branche courante à la branche nommée <nom_de_la_branche> sur le serveur
 
+======> TRES IMPORTANT : Pour lier un dépot cloner en local à un dépôt afin d'initialiser son git repository
+		git remote add origin https://github.com/tochyvn/javaee.git
+
 			----------------- git checkout <nom_de_la_branche> ------------------
 
 NB : Lorsqu'on change de branche le code courant sur notre pc change aussi en fonction des modif sur elles  =====> voir explanation ci-dessous
@@ -78,3 +81,34 @@ Si vous souhaitez réellement supprimer cette branche et perdre ainsi le travail
 /********************************************************************************************************************************************/
 ***************************************** VOICI LE LIEN *************************************************************************************
 ***************************************** https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Gestion-des-branches **************************
+
+
+===========================================================================================================================================
+========================================== PETIT RESUME POUR INITIALISER MON PROJET GIT ===================================================
+===========================================================================================================================================
+
+===> Une fois son projet (JAVA PHP...) crée en local faire un GIT INIT pour initialiser le repository en local
+
+===> Aller sur GIT et créer son repository avec un .gitignore selon le projet (PHP, JAVA, Symphony...)
+
+===> on fait un GIT FETCH
+
+===> faire la commande git remote add origin https://github.com/tochyvn/javaee.git 
+
+les paramètres sont : 
+                       ===>  "origin" representant le nom du remote distant à lier au projet
+                       ===>  "https://github.com/tochyvn/javaee.git" l'url de ce remote distant
+
+===> git branch -u origin/<nom_de_la_branche> permet de lier la branche courante à la branche nommée <nom_de_la_branche> sur le serveur
+
+===> Faire git pull pour récupérer Le fichier gitignore et la licence et Readme
+
+
+====> Ensuite ajouter les modifs puis les commit et push
+
+
+=========================================================================================================================================
+=============================== POUR LE SSH GIT ========================================================================================
+https://git-scm.com/book/fr/v2/Git-sur-le-serveur-G%C3%A9n%C3%A9ration-des-cl%C3%A9s-publiques-SSH
+
+
