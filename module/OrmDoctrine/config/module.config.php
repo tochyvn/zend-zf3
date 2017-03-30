@@ -4,7 +4,24 @@ namespace OrmDoctrine;
 use Zend\Router\Http\Segment; 
 use Zend\ServiceManager\Factory\InvokableFactory;
 
+use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
+
 return [
+
+    'doctrine' => [
+        'driver' => [
+            __NAMESPACE__ . '_driver' => [
+                'class' => AnnotationDriver::class,
+                'cache' => 'array',
+                'paths' => [__DIR__ . '/../src/Entity']
+            ],
+            'orm_default' => [
+                'drivers' => [
+                    __NAMESPACE__ . '\Entity' => __NAMESPACE__ . '_driver'
+                ],
+            ],
+        ],
+    ],
 
     /**     **/
     'service_manager' => [
@@ -20,7 +37,9 @@ return [
     /********* Configuration du controller sans parametre dans le constructeur sinon utiliser une factorie pour l'injection de dependances **********/
 	'controllers' => [
         'factories' => [
-            Controller\PostsController::class => InvokableFactory::class,
+            //Controller\PostsController::class => InvokableFactory::class,
+
+            Controller\PostsController::class => Factory\PostsControllerFactory::class,
         ],
     ],
 
